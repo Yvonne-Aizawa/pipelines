@@ -15,7 +15,7 @@ class Pipeline:
         # self.id = "pipeline_example"
 
         # The name of the pipeline.
-        self.name = "Pipeline Example"
+        self.name = "uwu time pipeline"
         pass
 
     async def on_startup(self):
