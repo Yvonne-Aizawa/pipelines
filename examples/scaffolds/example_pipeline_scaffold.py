@@ -1,7 +1,7 @@
 from typing import List, Union, Generator, Iterator
 from schemas import OpenAIChatMessage
 from pydantic import BaseModel
-
+from uwuipy import uwuipy
 
 class Pipeline:
     class Valves(BaseModel):
@@ -38,8 +38,8 @@ class Pipeline:
 
         print(body)
         print(user)
-
-        return body
+        uwu = uwuipy()
+        return uwu.uwuify(body)
 
     async def outlet(self, body: dict, user: dict) -> dict:
         # This function is called after the OpenAI API response is completed. You can modify the messages after they are received from the OpenAI API.
